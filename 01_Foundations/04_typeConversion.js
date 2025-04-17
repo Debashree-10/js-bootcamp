@@ -20,6 +20,8 @@
 let str1 = "123";
 let num1 = Number(str1); 
 console.log(num1); // Output: 123
+console.log(typeof(str1)); // Output: string
+console.log(typeof(num1)); // Output: number
 
 console.log(Number(3.14)); // Output: 3.14
 console.log(Number(Math.PI)); // Output: 3.141592653589793
@@ -30,6 +32,25 @@ console.log(Number("")); // Output: 0
 
 // A non numeric string (like "Hello") converts to NaN (Not a Number).
 console.log(Number("Hello")); // Output: NaN
+
+// Convert null to a number; null is converted to 0
+let score = null;
+console.log(Number(score)); // Output: 0
+
+// Convert undefined to a number; undefined is converted to NaN (Not a Number)
+let value = undefined;
+console.log(Number(value)); // Output: NaN
+
+// Convert true to a number; true is converted to 1
+let trueValue = true; 
+console.log(Number(trueValue)); // Output: 1
+
+// Convert false to a number; false is converted to 0
+let falseValue = false;
+console.log(Number(falseValue)); // Output: 0
+
+// Attempt to convert a non-numeric string to a number; results in NaN (Not a Number)
+console.log(Number("Debashree10")); // Output: NaN
 
 /*
  * Using parseInt()
@@ -110,6 +131,30 @@ console.log(str); // Output: "321"
 
 let num5 = 101112;
 console.log(`${num5}`); // Output: "101112"
+
+/*
+ * Converting Numbers to Boolean
+ * - Using Boolean()
+ */
+
+// Convert one to boolean; one is converted to true
+let isLoggedIn = 1;
+console.log(Boolean(isLoggedIn)); // Output: true
+
+// Convert zero to boolean; zero is converted to false
+console.log(Boolean(0)); // Output: false
+
+// Convert positive number to boolean; any non-zero number is converted to true
+console.log(Boolean(10)); // Output: true
+
+// Convert negative number to boolean; any non-zero number is converted to true
+console.log(Boolean(-4)); // Output: true
+
+// Convert empty string to boolean; an empty string is converted to false
+console.log(Boolean("")); // OOutput: false
+
+// Convert non-empty string to boolean; any non-empty string is converted to true
+console.log(Boolean("Hello!")); // OOutput: true
 
 /*
  * Converting Dates to Numbers
