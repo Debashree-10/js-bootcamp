@@ -143,7 +143,7 @@ greet(); // Output: Hello!
 console.log(greet()); // Output: undefined
 // The undefined is printed because the greet function does not have a return statement, so it implicitly returns undefined after logging "Hello!" to the console.
 
-console.log(typeof greet); // Output: "function
+console.log(typeof greet); // Output: function
 
 function greetings() {
     console.log("Hello!"); // This prints "Hello!" to the console.
