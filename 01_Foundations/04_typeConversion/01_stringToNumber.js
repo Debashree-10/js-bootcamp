@@ -84,3 +84,10 @@ let num3 = +str5;
 console.log(num3); // Output: 123
 
 console.log(+"abc"); // Output: NaN
+
+/*
+ * The first two operands are numbers (1 and 2), so they are added together first, resulting in 3. 
+ * Then, when 3 is concatenated with the string "2", JavaScript converts the number 3 to a string. 
+ * Result: "32"
+ */
+console.log(1 + 2 + "2"); // Output: "32"

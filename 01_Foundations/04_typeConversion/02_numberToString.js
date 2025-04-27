@@ -47,3 +47,10 @@ console.log(str); // Output: "321"
 
 let num5 = 101112;
 console.log(`${num5}`); // Output: "101112"
+
+/*
+ * The first operand is a string ("1"). 
+ * When the + operator is used, JavaScript converts the numbers (2 and 2) to strings and concatenates them. 
+ * Result: "122" 
+ */
+console.log("1" + 2 + 2); // Output: "122"
